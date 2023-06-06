@@ -1,0 +1,17 @@
+#Start recording tcl command: 6/4/2023 04:03:04
+#Project Location: C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah; Project name: Ouah
+prj_open "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah.rdf"
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+launch_programmer_prj "C:/lscc/radiant/3.2"
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+prj_run PAR -impl Ouah_v2
+prj_run Export -impl Ouah_v2
+#Stop recording: 6/4/2023 09:35:35

@@ -1,0 +1,22 @@
+#Start recording tcl command: 6/5/2023 20:52:53
+#Project Location: C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah; Project name: Ouah
+prj_open "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah.rdf"
+prj_create_impl "Ouah_v3" -dir "Ouah_v3" -strategy "Area" -synthesis "lse"
+file copy -force -- "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/source/Ouah_v2/ouah.vhd" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/source/Ouah_v2/impl_1.xcf" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/source/Ouah_v2/ouah.pdc" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/source/Ouah_v2/OuahSim.spf" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah_v3/source"
+prj_add_source  -impl "Ouah_v3" -work "work" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah_v3/source/ouah.vhd"
+prj_add_source  -impl "Ouah_v3" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah_v3/source/impl_1.xcf" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah_v3/source/ouah.pdc" "C:/Users/duodi/Documents/Personnel/electronique/fpga-cpld/lattice/Ouah/Ouah_v3/source/OuahSim.spf"
+prj_activate_impl "Ouah_v3"
+prj_run PAR -impl Ouah_v3
+prj_run PAR -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+prj_run Synthesis -impl Ouah_v3
+prj_run PAR -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+prj_run PAR -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+launch_programmer_prj "C:/lscc/radiant/3.2"
+prj_run PAR -impl Ouah_v3
+prj_run Export -impl Ouah_v3
+#Stop recording: 6/5/2023 22:46:12
